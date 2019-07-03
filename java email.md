@@ -8,7 +8,7 @@ spring boot 中包含有javamail直接引入
        <artifactId>spring-boot-starter-mail</artifactId>
      </dependency>
 
-####properties配置
+#### properties配置
 >
 \#发送者邮箱pop  
 spring.mail.host=smtp.163.com  
@@ -24,7 +24,7 @@ spring.mail.properties.mail.mstp.starttls.enable=true
 spring.mail.properties.mail.smtp.starttls.required=true
 server.port=9093
  
-####代码实现
+#### 代码实现
     @Autowired
     private JavaMailSender mailSender;
 
@@ -32,12 +32,13 @@ server.port=9093
     private String sender;
 
     @Value("${recipient.username}")
-    private String recipient;
-- 简单文本发送  
-    SimpleMailMessage mailMessage = new SimpleMailMessage();
-    mailMessage.setFrom(sender);
-    mailMessage.setTo(recipient);
-    mailMessage.setSubject("测试邮件发送");
-    mailMessage.setText("来自163邮箱的测试邮件");
+    private String recipient;  
+  
+    SimpleMailMessage mailMessage = new SimpleMailMessage();  
+    mailMessage.setFrom(sender);  
+    mailMessage.setTo(recipient);  
+    mailMessage.setSubject("测试邮件发送");  
+    mailMessage.setText("来自163邮箱的测试邮件");  
     mailSender.send(mailMessage);
-- 富文本发送
+#### 源代码地址
+https://github.com/qyngchen/sbtest.git
