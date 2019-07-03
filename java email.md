@@ -1,6 +1,6 @@
-#javamail使用
+# javamail使用
 ---
-####maven引用
+#### maven引用
 spring boot 中包含有javamail直接引入
 >
     <dependency>
