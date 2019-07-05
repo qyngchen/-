@@ -19,9 +19,9 @@ spring.mail.password=qy13148
 \#接受者邮件  
 recipient.username=969515689@qq.com  
 \#配置信息  
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.mstp.starttls.enable=true
-spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.properties.mail.smtp.auth=true  
+spring.mail.properties.mail.mstp.starttls.enable=true  
+spring.mail.properties.mail.smtp.starttls.required=true  
 server.port=9093
  
 #### 代码实现
