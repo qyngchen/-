@@ -137,8 +137,9 @@ jar包位置：easy-rules-core-3.1.0-sources.jar!/org/jeasy/rules/api/Rule.java
 	rulesEngine.fire(rules, facts);
 ### 规则引擎参数
 
-参数|类型|需求|默认  
+参数|类型|需求|默认
+-|-|-|-
 rulePriorityThreshold | int | no | MAXINT
-
-
-## 使用
+skipOnFirstAppliedRule|boolean|no|false
+skipOnFirstFailedRule|boolean|no|false
+skipOnFirstNonTriggeredRule|boolean|no|false
